@@ -1,0 +1,8 @@
+\chapter{Problem Definition}
+
+In spite of the availability of plenty of educational resources worldwide to tutor students in the process of building a compiler, most of them lack a systematic approach. 
+\\ 
+\\
+Though many attempts have been made to simplify this process down, these merely serve as a manual to compiler-generation tools such as LEX and YACC. Very few link the usage of the tools to the compiler design process. Also, most of these abstain from exploring the back-end working of these tools. The availability of such resources are limited because they are often localized within the institution or organization of origin.
+\\
+\\

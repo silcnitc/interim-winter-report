@@ -1,0 +1,10 @@
+1: Abstract
+2: Introduction
+3: Literature review
+4: Background of the work
+5: Problem definition
+6: Proposed Design
+7: Results, if any
+8: Discussion, if needed
+9: Conclusion
+10: Bibliography
