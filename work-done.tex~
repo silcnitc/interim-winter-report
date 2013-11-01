@@ -3,7 +3,7 @@
 \section{Literature review}
 
 \subsection{Lexical Analysis using LEX}
-
+Lexical analysis is the process of breaking up a source program into tokens\cite{citation-1-appel}. A lexical token is a sequence of characters that can be treated as a unit in the grammar of a programming language\cite{citation-2-appel}. Conceptually, a lexical analyzer scans a given program and produces an output of tokens.
 \subsection{Pattern matching by LEX}
 
 \subsection{Syntax analysis using YACC}
@@ -26,7 +26,6 @@
 
 \section{Compiling the framework}
 
-some text\cite{citation-2-name-here}, some more text
 
 Refer figure \ref{fig:label}.
 
@@ -35,4 +34,4 @@ Refer figure \ref{fig:label}.
 \includegraphics[scale=0.3]{./glider} % e.g. insert ./image for image.png in the working directory, adjust scale as necessary
 \caption{<Caption here>}
 \label{fig:label} % insert suitable label, this is used to refer to a fig from within the text as shown above
-\end{figure}
+\end{figure}	
