@@ -10,18 +10,21 @@ Also, LEX offers features to execute a single or compound C statement when a pat
  
 \section{Syntax analysis using YACC}
 Syntax analysis follows lexical analysis in the compilation process. The syntax of a programming language can be expressed using Context Free Grammars (CFG). Any sentential form of the programming language's grammar is considered a syntactically correct program. The process of checking whether a program can be derived from the programming language's grammar is referred to as \textit{parsing}. 
-YACC (Yet Another Compiler Compiler) was developed in 1970 by Stephen C. Johnson at AT\& T  Corporation. YACC is tool that translates the given CFG specification in a YACC program to a corresponding Push Down Automaton (PDA) implementation in C language. The generated C program when compiled, yields an executable parser. The source program is fed to the parser to check if it is syntactically correct. 
+YACC (Yet Another Compiler Compiler) was developed in 1970 by Stephen C. Johnson at AT\& T  Corporation. YACC is a tool that translates the given CFG specification in a YACC program to a corresponding Push Down Automaton (PDA) implementation in C language. The generated C program when compiled, yields an executable parser. The source program is fed to the parser to check if it is syntactically correct.
+ 
+\section{Semantic analysis using YACC}
+In addition to syntax analysis, YACC also provides features to support semantic analysis of the source program. Semantic analysis is achieved using C code. C code can be extensively embedded into a YACC program. YACC provides support for add an action to be executed with every grammar rule. These actions are written in C. To support the C code in the actions section, YACC provides an auxiliary functions section (also written in C).
 
 \chapter{Design}
 
 This chapter contains the proposed design which has been followed up till the current state of the project and will be followed (or improvised upon) till the completion of the project.
+
 \section{Documentation}
 
-This project will consists of vast documentation on the usage of LEX and YACC to generate a compiler, and how these tools can be exploited to build a compiler on a systematic basis. Initially, the documentation phase will concentrate more on the mastery of the tools and gradually introduce compiler design concepts and how these can be implemented using these tools.
+This project will consist of vast amount of documentation on the usage of LEX and YACC to generate a compiler. Initially, the documentation phase will concentrate more on the mastery of the tools and gradually introduce compiler design concepts and how these can be implemented using these tools.
 
-To differentiate itself from the other existing tutorials, the documentation will follow a very simple explanation approach using plenty of examples and input/output samples. The documentation will be self-sufficient in nature. It will be developed with an assumption that the learner would have basic working proficiency with the C language.
+The documentation will follow a very simple explanation approach using plenty of examples and input/output samples. The idea is to reduce the amount of time a learner spends in the beginning stages and instead invest this time in later on stages of compiler construction which are comparatively more complex. This way, the learner will be able to spend more time in implementing challenging compiler patches instead of spending a lot of time in the learning phase.
 
-The documentation will focus on the in-depth explanation of the theory used in the back-end working of these tools and eventually link this to compiler design strategies to enhance a better comprehending of the concepts.
 
 \section{Testing}
 
